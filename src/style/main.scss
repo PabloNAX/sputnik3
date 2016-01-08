@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'TalbotTypeKamerik105CyrillicLight';
+  src: url('../fonts/TalbotTypeKamerik105CyrillicLight.eot');
+  src: url('../fonts/TalbotTypeKamerik105CyrillicLight.eot') format('embedded-opentype'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLight.woff2') format('woff2'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLight.woff') format('woff'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLight.ttf') format('truetype'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLight.svg#TalbotTypeKamerik105CyrillicLight') format('svg');
+}
+
+@font-face {
+  font-family: 'TalbotTypeKamerik105CyrillicLightOblique';
+  src: url('../fonts/TalbotTypeKamerik105CyrillicLightOblique.eot');
+  src: url('../fonts/TalbotTypeKamerik105CyrillicLightOblique.eot') format('embedded-opentype'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLightOblique.woff2') format('woff2'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLightOblique.woff') format('woff'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLightOblique.ttf') format('truetype'),
+  url('../fonts/TalbotTypeKamerik105CyrillicLightOblique.svg#TalbotTypeKamerik105CyrillicLightOblique') format('svg');
+}
+
+/*
+* Third Party
+*/
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../../bower_components/normalize.css/normalize.css";
+
+/*
+* Custom
+*/
+@import "partials/_var";
+@import "partials/_sprite";
+@import "partials/app";
