@@ -21,6 +21,7 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
+        svg: 'build/img/',
         fonts: 'build/fonts/'
     },
     src: { //from
@@ -28,6 +29,7 @@ var path = {
         js: 'src/js/main.js',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*',
+        svg: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
@@ -35,6 +37,7 @@ var path = {
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.scss',
         img: 'src/img/**/*.*',
+        svg: 'src/img/**/*.svg',
         fonts: 'src/fonts/**/*.*',
         sprite: 'src/sprites/*.png'
     },
@@ -107,6 +110,11 @@ gulp.task('fonts:build', function() {
         .pipe(gulp.dest(path.build.fonts))
 });
 
+gulp.task('svg:build', function() {
+    gulp.src(path.src.svg)
+        .pipe(gulp.dest(path.build.svg))
+});
+
 
 gulp.task('build', [
     'html:build',
@@ -114,6 +122,7 @@ gulp.task('build', [
     'style:build',
     'fonts:build',
     'image:build',
+    'svg:build',
     'sprite:build'
     ]);
 
@@ -128,6 +137,9 @@ gulp.task('watch', function(){
         gulp.start('js:build');
     });
     watch([path.watch.img], function(event, cb) {
+        gulp.start('image:build');
+    });
+    watch([path.watch.svg], function(event, cb) {
         gulp.start('image:build');
     });
     watch([path.watch.sprite], function(event, cb) {
