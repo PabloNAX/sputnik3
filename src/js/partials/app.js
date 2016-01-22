@@ -1,23 +1,29 @@
-var myMap;
+// scrollspy - header
 
-// Дождёмся загрузки API и готовности DOM.
+
+// Yandex Map
 ymaps.ready(init);
 
-function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
-    myMap = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [55.76, 37.64], // Москва
-        zoom: 10
-    }, {
-        searchControlProvider: 'yandex#search'
-    });
+function init() {
 
-    document.getElementById('destroyButton').onclick = function () {
-        // Для уничтожения используется метод destroy.
-        myMap.destroy();
-    };
+    ////YandexApi ojakhuri map
+    var sputnikMap = new ymaps.Map("map", {
+            center: [55.7628, 37.6138], //sputnik hostel
+            zoom: 17,
+            controls: []
+        }),
+
+    // Создаем геообъект с типом геометрии "Круг".
+        sputnikPlacemark = new ymaps.GeoObject({
+            // Описание геометрии
+            geometry: {
+                type: "Point",
+                coordinates: [55.7628, 37.6138]
+
+            }
+        });
+
+    sputnikMap.geoObjects
+        .add(sputnikPlacemark);
 
 }
