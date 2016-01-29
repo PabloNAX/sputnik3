@@ -1,6 +1,6 @@
 {
-  "name": "suslik",
-  "description": "site for cats",
+  "name": "sputnik",
+  "description": "hostel",
   "main": "",
   "authors": [
     "Alexander Dolgan"
@@ -20,6 +20,8 @@
   ],
   "dependencies": {
     "normalize.css": "*",
-    "jquery": "2.*"
+    "jquery": "2.*",
+    "jquery-ui": "1.*"
+
   }
 }

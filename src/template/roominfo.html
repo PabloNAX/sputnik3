@@ -1,0 +1,92 @@
+<!-- Button trigger modal -->
+
+<ul class="tabs-ul">
+    <li class="col-md-3">
+        <a class="double-box-link" href="#double-box">
+            <img class="lozenge" src="../img/lozenge/first.jpg" alt="double">
+
+            <h2>Двухместный номер</h2>
+        </a>
+    </li>
+    <li class="col-md-3">
+        <a href="#triple-box-link">
+            <img class="lozenge" src="../img/lozenge/second.jpg" alt="double">
+
+            <h2>Трехместный номер</h2>
+        </a>
+    </li>
+    <li class="col-md-3">
+        <a href="#dorm-one-box-link">
+            <img class="lozenge" src="../img/lozenge/third.jpg" alt="double">
+
+            <h2>Места в дорме - односпальная кровать</h2>
+        </a>
+    </li>
+    <li class="col-md-3">
+        <a href="#dorm-double-box-link">
+            <img class="lozenge" src="../img/lozenge/first.jpg" alt="double">
+
+            <h2>Места в дорме - двуспальная кровать</h2>
+        </a>
+    </li>
+</ul>
+
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+    Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h1 class="modal-title" id="myModalLabel">Двухместный номер</h1>
+            </div>
+            <div class="modal-body">
+                <p>В этом отдельном номере большая двуспальная кровать, ящики и вешалки для хранения вещей, будильник,
+                    настольное зеркало. Душевые и туалетные комнаты общие.</p>
+
+                <!--carousel double-->
+                <section class="container-fluid / gallery">
+                    <div class="row">
+                        <div id="double-slider" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#double-slider" data-slide-to="0" class="active"></li>
+                                <li data-target="#double-slider" data-slide-to="1"></li>
+                                <li data-target="#double-slider" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="../img/carousel/slide-1.jpg" alt="dorm">
+                                </div>
+                                <div class="item">
+                                    <img src="../img/carousel/slide-2.jpg" alt="dorm">
+                                </div>
+                                <div class="item">
+                                    <img src="../img/carousel/slide-3.jpg" alt="dorm">
+                                </div>
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#double-slider" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Предыдущая</span>
+                            </a>
+                            <a class="right carousel-control" href="#double-slider" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Следующая</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!--/carousel double-->
+            </div>
+
+        </div>
+    </div>
+</div>
