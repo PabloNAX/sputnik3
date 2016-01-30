@@ -33,10 +33,10 @@ $line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
 //##
 
 //** Padding applied to the modal body
-$modal-inner-padding:         15px !default;
+$modal-inner-padding:         5px !default;
 
 //** Padding applied to the modal title
-$modal-title-padding:         15px !default;
+$modal-title-padding:         5px !default;
 //** Modal title line-height
 $modal-title-line-height:     $line-height-base !default;
 
@@ -57,6 +57,6 @@ $modal-header-border-color:   #e5e5e5 !default;
 $modal-footer-border-color:   $modal-header-border-color !default;
 
 $modal-lg:                    1300px !default;
-$modal-md:                    1100px !default;
+$modal-md:                    1000px !default;
 $modal-sm:                    300px !default;
 

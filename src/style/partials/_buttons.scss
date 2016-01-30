@@ -2,6 +2,10 @@
   background: transparent;
   border: none;
   font-size: 1.5em;
-  color: #ccc;
+  color: $text-color;
   outline: 0;
+}
+
+.close {
+  color: #fff;
 }
