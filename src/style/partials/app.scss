@@ -44,8 +44,7 @@ h1, h2, h3 {
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+
 
   list-style: none;
 }
@@ -164,6 +163,7 @@ article h2 {
 .lozenge {
   width: 100%;
   clip-path: polygon(50% 0%, 95% 50%, 50% 100%, 5% 50%);
+  margin-bottom: 1em;
 }
 
 .boxes {
@@ -219,6 +219,7 @@ article h2 {
   line-height: 3;
 }
 
+
 .mail-phone {
   text-align: center;
 }
@@ -269,25 +270,5 @@ article h2 {
 }
 
 
-//media query
-
-@media (min-width: 1200px) {
-  .about-h1 {
-    font-size: 6em;
-  }
-
-  .found-us h1 {
-    font-size: 6em;
-  }
-}
-
-@media (max-width: 967px) {
- .lozenge {
-   display: none;
- }
-  .hero-p {
-    display: none;
-  }
-}
 
 

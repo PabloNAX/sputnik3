@@ -1,0 +1,48 @@
+//media query
+
+@media (min-width: 1200px) {
+  .about-h1 {
+    font-size: 6em;
+  }
+
+  .found-us h1 {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 967px) {
+  .lozenge {
+    display: none;
+  }
+
+  .hero-p {
+    display: none;
+  }
+
+  .about {
+    min-height: 300px;
+    padding: 50px 50px;
+
+    background: none;
+  }
+
+  .found-us {
+    background: none;
+  }
+
+  .room-info-ul {
+    list-style: disc;
+  }
+
+  .second-loz {
+    margin: 0 2vw;
+  }
+
+  .modal-title{
+    font-size: 2rem;
+  }
+
+  .route p {
+    padding: 30px;
+  }
+}

@@ -43,6 +43,7 @@
                     </p>
                 </div>
     
+    
                 <section class="container-fluid gallery">
                     <div class="row">
                         <div id="hero-slider" class="carousel slide" data-ride="carousel">
@@ -56,7 +57,7 @@
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner" role="listbox">
                                 <div class="item active">
-                                    <img src="../img/carousel/slide-1.jpg" alt="dorm">
+                                    <img src="../img/carousel/slide-4.jpg" alt="dorm">
                                 </div>
                                 <div class="item">
                                     <img src="../img/carousel/slide-2.jpg" alt="dorm">
@@ -97,33 +98,33 @@
 
     <!--lozenge and rooms info-->
     <section class="container">
-        <ul>
+        <ul class="room-info-ul">
             <li class="col-md-3">
                 <button type="button" class="btn" data-toggle="modal" data-target="#double-box">
                     <img class="lozenge" src="../img/lozenge/first.jpg" alt="double">
     
-                    <h5>Двухместный номер</h5>
+                    Двухместный номер
                 </button>
             </li>
             <li class="col-md-3">
                 <button type="button" class="btn" data-toggle="modal" data-target="#triple-box">
                     <img class="lozenge" src="../img/lozenge/second.jpg" alt="triple">
     
-                    <h5>Трехместный номер</h5>
+                    Трехместный номер
                 </button>
             </li>
             <li class="col-md-3">
                 <button type="button" class="btn" data-toggle="modal" data-target="#dorm-one-box">
                     <img class="lozenge" src="../img/lozenge/third.jpg" alt="dorm">
     
-                    <h5>Места в дорме - односпальная кровать</h5>
+                    Места в дорме - односпальная кровать
                 </button>
             </li>
             <li class="col-md-3">
                 <button type="button" class="btn" data-toggle="modal" data-target="#dorm-double-box">
                     <img class="lozenge" src="../img/lozenge/first.jpg" alt="dorm">
     
-                    <h5>Места в дорме - двуспальная кровать</h5>
+                    Места в дорме - двуспальная кровать
                 </button>
             </li>
         </ul>
@@ -191,13 +192,13 @@
         </div>
     
         <!-- Modal triple box-->
-        <div class="modal fade" id="triple-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="triple-box" tabindex="-1" role="dialog" aria-labelledby="tripleLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                        <h1 class="modal-title" id="myModalLabel">Трехместный номер</h1>
+                        <h1 class="modal-title" id="tripleLabel">Трехместный номер</h1>
                     </div>
                     <div class="modal-body">
                         <p>В этом отдельном номере одна двуспальная и одна антресольная односпальная кровати. Шторы между кроватями помогут разделить пространство номера и сделать спальные места более уединенными. Также в номере ящики и вешалки для хранения вещей, будильник, зеркало. Душевые и туалетные комнаты общие.</p>
@@ -211,18 +212,22 @@
                                         <li data-target="#triple-slider" data-slide-to="0" class="active"></li>
                                         <li data-target="#triple-slider" data-slide-to="1"></li>
                                         <li data-target="#triple-slider" data-slide-to="2"></li>
+                                        <li data-target="#triple-slider" data-slide-to="3"></li>
                                     </ol>
     
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="../img/carousel/slide-1.jpg" alt="dorm">
+                                            <img src="../img/room-info/triple/triple.jpg" alt="dorm">
                                         </div>
                                         <div class="item">
-                                            <img src="../img/carousel/slide-2.jpg" alt="dorm">
+                                            <img src="../img/room-info/triple/triple1.jpg" alt="dorm">
                                         </div>
                                         <div class="item">
-                                            <img src="../img/carousel/slide-3.jpg" alt="dorm">
+                                            <img src="../img/room-info/triple/triple2.jpg" alt="dorm">
+                                        </div>
+                                        <div class="item">
+                                            <img src="../img/room-info/triple/triple3.jpg" alt="dorm">
                                         </div>
                                     </div>
     
@@ -245,13 +250,13 @@
         </div>
     
         <!-- dorm one triple box-->
-        <div class="modal fade" id="dorm-one-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="dorm-one-box" tabindex="-1" role="dialog" aria-labelledby="dormOneLabel">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                        <h1 class="modal-title" id="myModalLabel">Места в дорме - односпальная кровать</h1>
+                        <h1 class="modal-title" id="dormOneLabel">Места в дорме - односпальная кровать</h1>
                     </div>
                     <div class="modal-body">
                         <p>Выберите слипбокс в одном из наших дормов – для четырех или восьми человек. Каким бы ни оказался ваш выбор, в вашем слипбоксе всегда будут розетки, освещение, полка для мелочи, штора и индивидуальный ящик с электронным замком для безопасного хранения вещей. При размещении гостей в четырехместные комнаты мы стараемся делить их на мужские и женские. Восьмиместный дорм всегда общий. Путешествуя компанией, вы можете выбрать комнату для 8-ми, 5-ти или 4-х человек.</p>
@@ -265,18 +270,22 @@
                                         <li data-target="#dorm-one-slider" data-slide-to="0" class="active"></li>
                                         <li data-target="#dorm-one-slider" data-slide-to="1"></li>
                                         <li data-target="#dorm-one-slider" data-slide-to="2"></li>
+                                        <li data-target="#dorm-one-slider" data-slide-to="3"></li>
                                     </ol>
     
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="../img/carousel/slide-1.jpg" alt="dorm">
+                                            <img src="../img/room-info/dorm-one/dorm-one.jpg" alt="dorm">
                                         </div>
                                         <div class="item">
-                                            <img src="../img/carousel/slide-2.jpg" alt="dorm">
+                                            <img src="../img/room-info/dorm-one/dorm-one1.jpg" alt="dorm">
                                         </div>
                                         <div class="item">
-                                            <img src="../img/carousel/slide-3.jpg" alt="dorm">
+                                            <img src="../img/room-info/dorm-one/dorm-one2.jpg" alt="dorm">
+                                        </div>
+                                        <div class="item">
+                                            <img src="../img/room-info/dorm-one/dorm-one3.jpg" alt="dorm">
                                         </div>
                                     </div>
     
@@ -299,13 +308,13 @@
         </div>
     
         <!-- dorm double  box-->
-        <div class="modal fade" id="dorm-double-box" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="dorm-double-box" tabindex="-1" role="dialog" aria-labelledby="dormDouble">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                        <h1 class="modal-title" id="myModalLabel">Места в дорме - двуспальная кровать</h1>
+                        <h1 class="modal-title" id="dormDouble">Места в дорме - двуспальная кровать</h1>
                     </div>
                     <div class="modal-body">
                         <p>В наших общих комнатах для пяти или восьми человек есть двуспальные слипбоксы для тех, кто путешествует в паре. Каким бы ни оказался ваш выбор, у вашей кровати всегда будут розетки, освещение, полка для мелочи, штора и индивидуальный ящик с электронным замком для безопасного хранения вещей.</p>
@@ -319,18 +328,22 @@
                                         <li data-target="#dorm-double-slider" data-slide-to="0" class="active"></li>
                                         <li data-target="#dorm-double-slider" data-slide-to="1"></li>
                                         <li data-target="#dorm-double-slider" data-slide-to="2"></li>
+                                        <li data-target="#dorm-double-slider" data-slide-to="3"></li>
                                     </ol>
     
                                     <!-- Wrapper for slides -->
                                     <div class="carousel-inner" role="listbox">
                                         <div class="item active">
-                                            <img src="../img/carousel/slide-1.jpg" alt="dorm">
+                                            <img src="../img/room-info/dorm-double/dorm-double.jpg" alt="dorm">
                                         </div>
                                         <div class="item">
-                                            <img src="../img/carousel/slide-2.jpg" alt="dorm">
+                                            <img src="../img/room-info/dorm-double/dorm-double1.jpg" alt="dorm">
                                         </div>
                                         <div class="item">
-                                            <img src="../img/carousel/slide-3.jpg" alt="dorm">
+                                            <img src="../img/room-info/dorm-double/dorm-double2.jpg" alt="dorm">
+                                        </div>
+                                        <div class="item">
+                                            <img src="../img/room-info/dorm-double/dorm-double3.jpg" alt="dorm">
                                         </div>
                                     </div>
     
