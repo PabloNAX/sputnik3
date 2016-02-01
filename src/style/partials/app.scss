@@ -72,21 +72,48 @@ a:focus {
 .site-nav {
   height: 30px;
   padding: 10px;
-
   background-color: white;
 
   text-align: center;
+  position: relative;
 }
 
-.logo-header {
+.logo-header img{
   width: 145px;
+  display: inline-block;
+  position: absolute;
+}
+
+.menu-lang-box {
+  float: right;
+}
+
+.menu-drop {
+  display: inline-block;
+  float: left;
+  padding: 5px 10px 0 20px;
 }
 
 .lang {
-  float:right;
-  padding-right: 15px;
-  line-height: 2.5;
+  display: inline-block;
+  float: right;
+  padding: 5px 10px 0 20px;
 }
+
+.links {
+  margin-top: 10vh;
+}
+
+.modal-body .links li a {
+  display: block;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  color: white;
+  font-size: 2.5em;
+}
+.links li a:hover {
+  background-color: rgba(255,255,255,.1);
+}
+
 
 //hero slider
 
@@ -130,6 +157,15 @@ a:focus {
 .carousel-inner>.item>a>img,
 .carousel-inner>.item>img {
   width: 100%;
+}
+
+
+
+
+.site-nav-links:hover .navigation,
+.site-nav-links:focus .navigation,
+{
+  display: block;
 }
 
 // About section
