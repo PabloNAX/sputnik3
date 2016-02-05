@@ -33,6 +33,3 @@ function init() {
     // отключается zoom при прокрутке страницы
     sputnikMap.behaviors.disable('scrollZoom');
 }
-
-
-

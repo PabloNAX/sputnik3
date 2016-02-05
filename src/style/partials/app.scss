@@ -68,20 +68,22 @@ a:focus {
 }
 
 //header logo and language switcher
-
 .site-nav {
-  height: 30px;
+  height: 50px;
   padding: 10px;
   background-color: white;
 
   text-align: center;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }
 
 .logo-header img{
   width: 145px;
   display: inline-block;
   position: absolute;
+  margin-left: -75px;
 }
 
 .menu-lang-box {
@@ -100,8 +102,20 @@ a:focus {
   padding: 5px 10px 0 20px;
 }
 
+.menu-lang-box span{
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+//hamburger menu and dialog box
+
 .links {
   margin-top: 10vh;
+  padding: 0;
+  list-style: none;
+}
+
+.modal {
+  margin-top: 4em;
 }
 
 .modal-body .links li a {
@@ -120,7 +134,6 @@ a:focus {
 .hero {
   position: relative;
   text-align: center;
-  margin-top: 15px;
 
 }
 
@@ -192,6 +205,12 @@ a:focus {
 
 //room info
 
+.roominfo-h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 50px 0 20px 0;
+}
+
 article h2 {
   text-align: center;
 }
@@ -206,9 +225,6 @@ article h2 {
   position: relative;
 }
 
-.gallery {
-  margin-top: 1.5em;
-}
 
 //contacts
 .contacts {

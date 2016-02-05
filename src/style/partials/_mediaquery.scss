@@ -36,6 +36,7 @@
 
   .second-loz {
     margin: 0 2vw;
+    width: 135px;
   }
 
   .modal-title{
@@ -44,5 +45,9 @@
 
   .route p {
     padding: 30px;
+  }
+
+  .btn {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
   }
 }

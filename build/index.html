@@ -29,10 +29,10 @@
                 <!--navigation links-->
                 <div class="menu-lang-box">
                     <!--<a class="menu-drop" href="#">Меню</a>-->
-                    <button type="button" data-toggle="modal" data-target="#menu-links">
-                        Меню
-                    </button>
-                <!--language links-->
+                    <span class="glyphicon glyphicon glyphicon-menu-hamburger
+    " data-toggle="modal" data-target="#menu-links">
+                    </span>
+                    <!--language links-->
                     <div class="lang">
                         <a href="//sputnikhostel.ru">ru /</a>
                         <a href="//sputnikhostel.ru/indexen.html"> en</a>
@@ -43,15 +43,15 @@
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
+                                <button type="button" class="close btn btn-primary" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span></button>
                                 <h1 class="modal-title" id="menu-links-title">Sputnik Hostel & Personal space</h1>
                             </div>
                             <div class="modal-body">
                                 <ul class="links">
-                                    <li><a href="about">О нас</a></li>
-                                    <li><a href="roominfo">Комнаты</a></li>
-                                    <li><a href="contacts">Контакты</a></li>
+                                    <li><a href="#about" onclick="$('#menu-links').modal('hide')">О нас</a></li>
+                                    <li><a href="#roominfo" onclick="$('#menu-links').modal('hide')">Наши номера</a></li>
+                                    <li><a href="#contacts" onclick="$('#menu-links').modal('hide')">Контакты</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -114,7 +114,7 @@
         </header>
 
     <!--section with text about-->
-    <section class="container / about">
+    <section class="container / about" id="about">
         <div class="row">
             <h1 class="about-h1">Микрокосмос</h1>
 
@@ -126,7 +126,8 @@
     </section>
 
     <!--lozenge and rooms info-->
-    <section class="container">
+    <section class="container" id="roominfo">
+        <h1 class="roominfo-h1">Наши номера</h1>
         <ul class="room-info-ul">
             <li class="col-md-3">
                 <button type="button" class="btn" data-toggle="modal" data-target="#double-box">
@@ -399,7 +400,7 @@
 
     <!--contacts-->
     <!--yandex map and video route-->
-    <section class="container / contacts">
+    <section class="container / contacts" id="contacts">
 
         <div class="row / found-us">
             <h1>Найдите нас</h1>
