@@ -322,5 +322,9 @@ article h2 {
 }
 
 
-
-
+.affix {
+  width: 75%;
+  position: fixed;
+  top:0;
+  transform: translate(-50%,0%);
+}

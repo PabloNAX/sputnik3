@@ -33,3 +33,12 @@ function init() {
     // отключается zoom при прокрутке страницы
     sputnikMap.behaviors.disable('scrollZoom');
 }
+
+//bootstrap affix
+$('#sticky').affix({
+    offset: {
+        top: 160,
+        bottom: 200
+    }
+});
+
