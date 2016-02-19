@@ -87,6 +87,20 @@
   line-height: $modal-title-line-height;
 }
 
+.link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-reserve {
+  background-color: $btn-default-color;
+  padding: 10px;
+}
+
+.btn-reserve span{
+  color: white;
+}
+
 // Modal body
 // Where all modal content resides (sibling of .modal-header and .modal-footer)
 .modal-body {

@@ -28,6 +28,8 @@ body {
   font-size: $font-size-base; // 14px
 
   color: $text-color; // black
+
+  -webkit-font-smoothing:antialiased;
 }
 
 h1 {
@@ -45,7 +47,6 @@ h1, h2, h3 {
 
 ul {
 
-
   list-style: none;
 }
 
@@ -56,7 +57,7 @@ p {
 a,
 a:link,
 a:visited,
-a:active,{
+a:active, {
   color: $brand-primary;
 
 }
@@ -69,21 +70,18 @@ a:focus {
 
 //header logo and language switcher
 .site-nav {
-  height: 50px;
-  padding: 10px;
+  padding: 5px;
   background-color: white;
 
   text-align: center;
   position: fixed;
   width: 100%;
-  z-index: 99999;
+  z-index: 9999;
 }
 
-.logo-header img{
+.logo-header img {
   width: 145px;
-  display: inline-block;
-  position: absolute;
-  margin-left: -75px;
+  margin-right: -75px;
 }
 
 .menu-lang-box {
@@ -91,21 +89,26 @@ a:focus {
 }
 
 .menu-drop {
-  display: inline-block;
   float: left;
   padding: 5px 10px 0 20px;
 }
 
 .lang {
-  display: inline-block;
   float: right;
-  padding: 5px 10px 0 20px;
+  padding: 10px 10px 0 20px;
 }
 
-.menu-lang-box span{
+.menu-lang-box span {
   font-size: 1.5em;
-  line-height: 1.5;
+  line-height: 1.8;
 }
+
+.visa a{
+  font-size: 0.8em;
+  padding-right: 10px;
+  padding-bottom:5px;
+}
+
 //hamburger menu and dialog box
 
 .links {
@@ -120,14 +123,30 @@ a:focus {
 
 .modal-body .links li a {
   display: block;
-  border-bottom: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
   color: white;
   font-size: 2.5em;
 }
+
 .links li a:hover {
-  background-color: rgba(255,255,255,.1);
+  background-color: rgba(255, 255, 255, .1);
 }
 
+//travelline search form
+
+.tl-search {
+  padding-top: 5px;
+  position: fixed;
+  width: 100%;
+  top: 50px;
+  background-color: rgba(0, 0, 0, .7);
+  z-index: 99;
+}
+
+.tl-search-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 //hero slider
 
@@ -162,22 +181,23 @@ a:focus {
   padding: 10px;
   margin: 0 auto;
 
-  font-size: 1.2em;
+
+  font-size: 1.3em;
   color: #FFF;
   text-shadow: 1px 1px black;
 }
 
-.carousel-inner>.item>a>img,
-.carousel-inner>.item>img {
+.gallery {
+  margin-top: 50px;
+}
+
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
   width: 100%;
 }
 
-
-
-
 .site-nav-links:hover .navigation,
-.site-nav-links:focus .navigation,
-{
+.site-nav-links:focus .navigation {
   display: block;
 }
 
@@ -187,9 +207,7 @@ a:focus {
   min-height: 400px;
   padding: 100px 50px;
 
-  background: url("../img/section-bg.svg")
-              no-repeat
-              center;
+  background: url("../img/section-bg.svg") no-repeat center;
 
   background-size: cover;
 }
@@ -225,16 +243,14 @@ article h2 {
   position: relative;
 }
 
-
 //contacts
 .contacts {
   margin-top: 3em;
 }
 
 .found-us {
-  background: url("../img/section-bg2.svg")
-              no-repeat
-              center;
+  height: 70px;
+  background: url("../img/section-bg2.svg") no-repeat center;
 
   background-size: cover;
 }
@@ -248,14 +264,14 @@ article h2 {
   text-transform: uppercase;
 }
 
-.found-us h2{
+.found-us h2 {
   text-align: center;
   font-size: 2em;
   text-transform: uppercase;
 }
 
 //route block with yandex map and video
-.route h3{
+.route h3 {
   text-align: center;
   line-height: 3;
 }
@@ -266,14 +282,15 @@ article h2 {
   margin: 0 auto;
 }
 
-.route h2{
+.route h2 {
   text-align: center;
   line-height: 3;
 }
 
-
 .mail-phone {
   text-align: center;
+  font-size: $font-size-large;
+  letter-spacing: 1.2px;
 }
 
 .mail-phone a {
@@ -283,7 +300,7 @@ article h2 {
 
 //site footer
 
-.site-footer{
+.site-footer {
   margin-top: 2em;
 }
 
@@ -304,13 +321,13 @@ article h2 {
 .third-loz p {
   display: block;
   position: absolute;
-  
+
   width: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 0;
-  
+
   text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 1px;
@@ -318,13 +335,16 @@ article h2 {
 
 .second-loz {
   margin: 0 3vw;
-  width: 150px;
+  width: 100px;
 }
 
+.copyright {
+  text-align: center;
+  font-size: $font-size-small;
+}
 
-.affix {
-  width: 75%;
-  position: fixed;
-  top:0;
-  transform: translate(-50%,0%);
+/* VISA PAGE */
+
+.visa-body {
+  padding-top:250px;
 }
