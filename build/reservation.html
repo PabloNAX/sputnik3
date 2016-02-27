@@ -1,25 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial, scale=1">
+    <title>Sputnik - Hostel & Personal space в Москве</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
 
-    <p id="tl-anchor">С помощью приведенной ниже формы вы можете забронировать наши номера в режиме онлайн и получить
-        гарантированную бронь. Для оплаты вы можете использовать кредитную карту, электронные деньги, безналичный расчет
-        либо <b>оплатить заказ на месте.</b></p>
-    <!-- start booking form 2.0 -->
-    <div id="tl-booking-form">форма онлайн-бронирования</div>
-    <script type="text/javascript">
-        (function (w) {
-            var q = [
-                ['setContext', 'TL-INT-sputnikhostel', 'ru'],
-                ['embed', 'booking-form', {container: 'tl-booking-form'}]
-            ];
-            var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {});
-            ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
-            if (!ti.__loader) {
-                ti.__loader = true;
-                var d = w.document, p = d.location.protocol, s = d.createElement('script');
-                s.type = 'text/javascript';
-                s.async = true;
-                s.src = (p == 'https:' ? p : 'http:') + '//ibe.tlintegration.com/integration/loader.js';
-                (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
-            }
-        })(window);
-    </script>
-    <!-- end booking form 2.0 -->
+
+<a href="//sputnikhostel.ru"><h1 class="reservation-h1">Вернуться на сайт</h1></a>
+
+<!-- start booking form 2.0 -->
+<div id="tl-booking-form">форма онлайн-бронирования</div>
+<script type="text/javascript">
+    (function (w) {
+        var q = [
+            ['setContext', 'TL-INT-sputnikhostel', 'ru'],
+            ['embed', 'booking-form', {container: 'tl-booking-form'}]
+        ];
+        var t = w.travelline = (w.travelline || {}), ti = t.integration = (t.integration || {});
+        ti.__cq = ti.__cq ? ti.__cq.concat(q) : q;
+        if (!ti.__loader) {
+            ti.__loader = true;
+            var d = w.document, p = d.location.protocol, s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.async = true;
+            s.src = (p == 'https:' ? p : 'http:') + '//ibe.tlintegration.com/integration/loader.js';
+            (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+        }
+    })(window);
+</script>
+<!-- end booking form 2.0 -->
+</body>
+</html>

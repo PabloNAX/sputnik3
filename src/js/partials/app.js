@@ -6,7 +6,7 @@ ymaps.ready(init);
 
 function init() {
 
-    ////YandexApi ojakhuri map
+    ////YandexApi map
     var sputnikMap = new ymaps.Map("map", {
             center: [55.7630, 37.6133], //sputnik hostel
             zoom: 17,
@@ -26,12 +26,12 @@ function init() {
             }
         });
 
-    sputnikMap.geoObjects
-        .add(sputnikPlacemark);
-
+    sputnikMap.geoObjects.add(sputnikPlacemark);
+    sputnikMap.disableDragging()
 
     // отключается zoom при прокрутке страницы
     sputnikMap.behaviors.disable('scrollZoom');
+    sputnikMap.disableScrollZoom();
 }
 
 ////bootstrap affix
@@ -61,3 +61,12 @@ function init() {
         (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
     }
 })(window);
+
+//resolve modal problem
+$(document).on('show.bs.modal', '.modal', function () {
+    var zIndex = 1040 + (10 * $('.modal:visible').length);
+    $(this).css('z-index', zIndex);
+    setTimeout(function() {
+        $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
+    }, 0);
+});
