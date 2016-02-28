@@ -56,11 +56,25 @@
   .gallery {
     margin-top: 222px;
   }
-}
-
-@media (min-width: 400px) {
   .found-us {
-    height: 300px;
-    margin-top: 100px;
+    height: 50px;
+  }
+  #contacts {
+    padding-top: 220px;
+    margin-top: -220px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
+  #roominfo {
+    padding-top: 150px;
+    margin-top: -150px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+  }
+  #about {
+    padding-top: 250px;
+    margin-top: -250px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
   }
 }
